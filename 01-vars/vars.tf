@@ -32,3 +32,16 @@ variable "sample_list" {
 output "sample_list" {
   value = var.sample_list[3]
 }
+
+variable "sample_map" {
+  default = {
+    number1 = 123
+    boolean = true
+    string = "hello"
+    number2 = 12.4
+  }
+}
+
+output "sample_map" {
+  value = var.sample_map[number2]
+}
