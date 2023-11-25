@@ -3,5 +3,5 @@ data "aws_security_group" "allow-all" {
 }
 
 output "security_group" {
-  value = data.aws_security_group.selected.id
+  value = data.aws_security_group.allow-all.id
 }
