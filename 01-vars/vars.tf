@@ -42,9 +42,9 @@ variable "sample_map" {
   }
 }
 
-output "sample_map" {
+output "print_number2" {
   value = var.sample_map["number2"]
 }
-output "sample_boolean" {
+output "print_boolean" {
   value = var.sample_map["boolean"]
 }
