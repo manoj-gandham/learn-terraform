@@ -43,5 +43,5 @@ variable "sample_map" {
 }
 
 output "sample_map" {
-  value = var.sample_map.boolean
+  value = var.sample_map[2]
 }
