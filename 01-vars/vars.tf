@@ -57,6 +57,6 @@ output "environmemt" {
 
 variable "auto_num1" {}
 
-output "from auto.tfvars" {
+output "print_demo" {
   value = var.auto_num1
 }
