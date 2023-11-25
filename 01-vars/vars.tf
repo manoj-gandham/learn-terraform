@@ -54,3 +54,8 @@ variable "env" {}
 output "environmemt" {
   value = var.env
 }
+variable "name" {}
+
+output "demo.tfvars" {
+  value = var.name
+}
