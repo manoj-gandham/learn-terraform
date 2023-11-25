@@ -1,6 +1,6 @@
-#resource "null_resource" "hello" {
-#  count = 10
-#}
+resource "null_resource" "hello" {
+  count = 10
+}
 
 variable "names" {
   default = [ "manoj", "ram","rama" ]
