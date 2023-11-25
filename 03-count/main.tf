@@ -1,4 +1,4 @@
-resource "null_resource" "names" {
+resource "null_resource" "name" {
   count = 10
 }
 
