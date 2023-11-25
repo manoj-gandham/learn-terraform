@@ -54,8 +54,9 @@ variable "env" {}
 output "environmemt" {
   value = var.env
 }
-variable "name" {}
 
-output "demo.tfvars" {
-  value = var.name
+variable "auto_num1" {}
+
+output "from auto.tfvars" {
+  value = var.auto_num1
 }
