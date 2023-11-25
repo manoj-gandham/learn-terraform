@@ -48,3 +48,5 @@ output "print_number2" {
 output "print_boolean" {
   value = var.sample_map["boolean"]
 }
+
+variable "env" {}
