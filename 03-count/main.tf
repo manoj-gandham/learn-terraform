@@ -10,6 +10,6 @@ resource "null_resource" "names" {
   count = length(var.names)
 
   provisioner "local-exec" {
-    command = "echo ${var.names[count.index]}"
+    command = "echo name - ${var.names[count.index]}"
   }
 }
