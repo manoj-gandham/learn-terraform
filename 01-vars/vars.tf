@@ -19,3 +19,16 @@ variable "city" {
 output "city" {
   value = "name of the city = ${var.city}"
 }
+
+variable "sample_list" {
+  default = [
+    100,
+    true,
+    "hello",
+    10.2
+  ]
+}
+
+output "sample_list" {
+  value = var.sample_list[1]
+}
