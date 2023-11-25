@@ -50,3 +50,7 @@ output "print_boolean" {
 }
 
 variable "env" {}
+
+output "env" {
+  value = var.env
+}
