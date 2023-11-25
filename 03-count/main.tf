@@ -7,5 +7,5 @@ variable "names" {
 }
 
 resource "null_resource" "names" {
-  count = var.names
+  count = length(var.names)
 }
