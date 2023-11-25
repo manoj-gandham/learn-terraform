@@ -51,6 +51,6 @@ output "print_boolean" {
 
 variable "env" {}
 
-output "env" {
+output "environmemt" {
   value = var.env
 }
