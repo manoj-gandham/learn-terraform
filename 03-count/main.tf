@@ -1,15 +1,16 @@
-resource "null_resource" "name" {
+resource "null_resource" "null" {
   count = 10
 }
 
-resource "null_resource" "names" {
-  count = length(var.names)
+resource "null_resource" "fruits" {
+  count = length(var.fruits)
 
   provisioner "local-exec" {
-    command = "echo name - ${var.names[count.index]}"
+    command = "echo Fruit Name -  ${var.fruits[count.index]}"
   }
+
 }
 
-variable "names" {
-  default = [ "manoj", "ram","rama" ]
+variable "fruits" {
+  default = [ "apple", "banana", "orange"]
 }
