@@ -45,3 +45,6 @@ variable "sample_map" {
 output "sample_map" {
   value = var.sample_map["number2"]
 }
+output "sample_boolean" {
+  value = var.sample_map["boolean"]
+}
