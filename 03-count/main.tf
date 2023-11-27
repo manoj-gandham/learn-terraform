@@ -3,15 +3,14 @@ resource "null_resource" "null" {
 }
 
 
-resource "null_resource" "animals" {
-  count = length(var.names_of_the_animals)
+resource "null_resource" "names_of_the_vegs" {
+  count = length(var.names_of_the_vegs)
 
   provisioner "local-exec" {
-    command = "echo animal name is ${var.names_of_the_animals[count.index]}"
+    command = "echo name of the vegetable is ${var.names_of_the_vegs[count.index]}"
   }
 }
 
-
-variable "names_of_the_animals" {
-  default = [ "lion", "deer", "cheeta" ]
+variable "names_of_the_vegs" {
+  default = ["chillies", "brinjal","coloflower" ]
 }
