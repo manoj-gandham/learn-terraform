@@ -23,6 +23,6 @@ variable "list_of_colleges" {
 resource "null_resource" "Collageis_names" {
   for_each = var.list_of_colleges
   provisioner "local-exec" {
-    command = "echo ${each.value} from ${each.key}"
+    command = "echo ${each.key} from ${each.value["count"]}"
   }
 }
