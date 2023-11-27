@@ -2,13 +2,16 @@ resource "null_resource" "null" {
   count = 10
 }
 
-variable "cities" {
-  default = [ "hyd", "bang", "kolka"]
+
+resource "null_resource" "animals" {
+  count = length(var.names_of_the_animals)
+
+  provisioner "local-exec" {
+    echo = "animal name is ${var.names_of_the_animals[count.index]}"
+  }
 }
 
-resource "null_resource" "names_cities" {
-  count = length(var.cities)
-  provisioner "local-exec" {
-    command = "echo cities name = ${var.cities[count.index]}"
-  }
+
+variable "names_of_the_animals" {
+  default = [ "lion", "deer", "cheeta" ]
 }
