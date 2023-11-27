@@ -1,13 +1,14 @@
-resource "null_resource" "name_of_the_dist" {
-  for_each = var.dist_names
-  provisioner "local-exec" {
-    command = "echo name of the dist is ${each.key} - ${each.value}}"
+variable "name_of_the_colleges" {
+  default = {
+    kphb = "JNTHU"
+    bongloor = "AVNIT"
+    mangapally = "SriIndu"
   }
 }
-variable "dist_names" {
-  default = {
-    mncl = "abd"
-    knr = "jgtl"
-    kagaz = "rkp"
+
+resource "null_resource" "Collageis_names" {
+  for_each = var.name_of_the_colleges
+  provisioner "local-exec" {
+    command = "echo ${each.value} from ${each.key}"
   }
 }
