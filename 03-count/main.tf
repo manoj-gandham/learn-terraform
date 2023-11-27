@@ -7,7 +7,7 @@ resource "null_resource" "animals" {
   count = length(var.names_of_the_animals)
 
   provisioner "local-exec" {
-    echo = "animal name is ${var.names_of_the_animals[count.index]}"
+    command = "echo animal name is ${var.names_of_the_animals[count.index]}"
   }
 }
 
