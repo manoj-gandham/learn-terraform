@@ -9,13 +9,13 @@
 variable "list_of_colleges" {
   default = {
     AVNIT = {
-      NAME = "MANOJ"
+      "NAME" = "MANOJ"
     }
     SRINIDU ={
-      NAME = "RAVI"
+      "NAME" = "RAVI"
     }
     GURU = {
-      NAME = "SRIKANTH"
+      "NAME" = "SRIKANTH"
     }
   }
 }
