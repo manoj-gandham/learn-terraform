@@ -10,12 +10,15 @@ variable "list_of_colleges" {
   default = {
     AVNIT = {
       NAME = "MANOJ"
+      count = 10
     }
     SRINIDU ={
       NAME = "RAVI"
+      count = 100
     }
     GURU = {
       NAME = "SRIKANTH"
+      count = 200
     }
   }
 }
