@@ -3,5 +3,5 @@ variable "test" {
 }
 
 output "name_the_person" {
-  value = var.test
+  value = upper(var.test)
 }
