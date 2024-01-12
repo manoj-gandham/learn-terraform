@@ -7,9 +7,13 @@ output "name_the_person" {
 }
 
 variable "test1" {
-  default = "manoj"
+  default = {
+    name = "manoj"
+    from = "mncl"
+    vill = "tkp"
+  }
 }
 
 output "lookup_op" {
-  value = var.test1
+  value = var.test1[1]
 }
