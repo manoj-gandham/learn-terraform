@@ -15,5 +15,5 @@ variable "test1" {
 }
 
 output "lookup_op" {
-  value = var.test1["1"]
+  value = var.test1["name"]
 }
