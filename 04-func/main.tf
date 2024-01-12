@@ -15,5 +15,5 @@ variable "test1" {
 }
 
 output "lookup_op" {
-  value = lookup(var.test1,"num","hai")
+  value = lookup(var.test1,"num","input missing")
 }
