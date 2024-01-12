@@ -15,5 +15,5 @@ variable "test1" {
 }
 
 output "lookup_op" {
-  value = lookup(var.test1,"num","map of map")
+  value = lookup(var.test1,"num","not in map of map")
 }
